@@ -1,0 +1,114 @@
+.job-detail {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.job-header {
+  margin-bottom: 2rem;
+}
+
+.job-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+}
+
+.job-content {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-description,
+.job-requirements {
+  margin-bottom: 2rem;
+}
+
+.job-description h2,
+.job-requirements h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.job-description p,
+.job-requirements p {
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.apply-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.apply-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload {
+  margin-bottom: 1.5rem;
+}
+
+.upload-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.upload-label:hover {
+  border-color: #3b82f6;
+}
+
+.already-applied {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.already-applied svg {
+  color: #10b981;
+}
+
+.error-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+

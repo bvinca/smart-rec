@@ -1,0 +1,42 @@
+repos:
+  # ── Whitespace / file hygiene ─────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: detect-private-key          # catches raw PEM blocks
+      - id: no-commit-to-branch
+        args: [--branch, main]
+
+  # ── Black (formatter) ────────────────────────────────────────────────────
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black
+        language_version: python3.11
+        files: ^(backend|ai)/
+
+  # ── Ruff (linter + import sorter) ────────────────────────────────────────
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      - id: ruff
+        args: [--fix]
+        files: ^(backend|ai)/
+      - id: ruff-format
+        files: ^(backend|ai)/
+
+  # ── Environment / secret leakage check ───────────────────────────────────
+  - repo: local
+    hooks:
+      - id: no-env-secrets
+        name: "No .env secrets committed"
+        language: python
+        entry: python scripts/check_no_env_secrets.py
+        pass_filenames: true
+        types: [text]

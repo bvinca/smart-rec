@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.hypothesis/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads and runtime data
+uploads/
+chroma_db/
+*.pdf
+*.doc
+*.docx
+
+# Generated test / benchmark output
+ai/test_results/
+ai/benchmark/results.json
+ai/benchmark/results.md
+ai/benchmark/scatter.png
+ai/tests/security/injection_results.json
+
+# Unused / dead code (dissertation submission audit — keep locally, exclude from repo)
+ai/embeddings/recommender.py
+ai/tests/test_job_enhancer.py
+ai/tests/test_multilingual_parser.py
+ai/tests/test_resume_analyzer.py
+ai/tests/test_skill_visualizer.py
+ai/tests/test_model_benchmark.py
+frontend/src/api/recommendations.js
+scripts/replace_prints.py
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store

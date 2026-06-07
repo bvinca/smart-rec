@@ -1,0 +1,54 @@
+{
+  "tone_settings": {
+    "professional": "professional, concise, and encouraging",
+    "formal": "formal, respectful, and structured",
+    "friendly": "friendly, warm, and approachable",
+    "brief": "brief, direct, and to the point"
+  },
+  "message_types": {
+    "acknowledgment": {
+      "description": "Sent when an applicant applies for a job",
+      "word_count": "80-120",
+      "key_points": [
+        "Thank you for applying",
+        "Confirmation of receipt",
+        "Next steps information"
+      ]
+    },
+    "feedback": {
+      "description": "Sent after resume scoring or interview",
+      "word_count": "100-150",
+      "key_points": [
+        "Acknowledgment of application",
+        "Positive feedback on strengths",
+        "Constructive suggestions",
+        "Encouragement for future"
+      ]
+    },
+    "rejection": {
+      "description": "Sent after a low overall score or rejection decision",
+      "word_count": "80-120",
+      "key_points": [
+        "Thank you for interest",
+        "Respectful rejection",
+        "Encouragement for future"
+      ]
+    },
+    "interview_invitation": {
+      "description": "Sent after shortlist threshold is met",
+      "word_count": "100-150",
+      "key_points": [
+        "Congratulations on shortlisting",
+        "Enthusiasm about candidacy",
+        "Interview scheduling request",
+        "Next steps"
+      ]
+    }
+  },
+  "default_settings": {
+    "tone": "professional",
+    "max_tokens": 500,
+    "temperature": 0.7
+  }
+}
+

@@ -1,0 +1,79 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# SmartRecruiter — Python tooling configuration
+# ──────────────────────────────────────────────────────────────────────────────
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["backend", "ai"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "TID", # flake8-tidy-imports
+    "RUF", # ruff-specific rules
+]
+ignore = [
+    "E501",   # line length — handled by formatter
+    "B008",   # do not perform function calls in default args (FastAPI depends on this)
+    "B904",   # raise from — too noisy for existing codebase
+    "SIM117", # nested with — cosmetic, not worth forcing
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app", "ai"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# mypy
+# ──────────────────────────────────────────────────────────────────────────────
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+warn_unused_ignores = true
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true          # third-party stubs may be absent
+exclude = [
+    "backend/venv/",
+    "frontend/",
+    "ai/test_results/",
+    ".pytest_cache/",
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "langchain.*",
+    "chromadb.*",
+    "sentence_transformers.*",
+    "spacy.*",
+    "fitz.*",
+    "PyPDF2.*",
+    "docx.*",
+    "langdetect.*",
+    "deep_translator.*",
+]
+ignore_missing_imports = true
+
+# ──────────────────────────────────────────────────────────────────────────────
+# pytest
+# ──────────────────────────────────────────────────────────────────────────────
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests", "ai/tests"]
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]

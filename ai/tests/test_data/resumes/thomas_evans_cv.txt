@@ -1,0 +1,24 @@
+THOMAS EVANS
+Email: thomas.evans@example.com
+LinkedIn: linkedin.com/in/thomasevans
+Location: Cambridge, UK
+
+SUMMARY
+Senior Python Developer with 7 years of experience in backend architecture and microservice design. Expert in FastAPI, PostgreSQL, and distributed cloud systems. Led development teams and integrated AI-based solutions into production systems.
+
+SKILLS
+Python, FastAPI, Django, PostgreSQL, Redis, AWS, Docker, Kubernetes, REST APIs, NLP, CI/CD, Agile Leadership
+
+EXPERIENCE
+Lead Python Engineer – NovaTech AI Systems, Cambridge
+Feb 2018 – Present
+- Designed scalable microservices using FastAPI and Redis.
+- Mentored 6 junior developers and led sprint planning.
+- Integrated OpenAI APIs into backend systems.
+- Architected CI/CD pipelines using GitHub Actions.
+
+EDUCATION
+MSc Computer Science – University of Cambridge, 2017
+
+
+

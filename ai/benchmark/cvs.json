@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "notes": "Twenty-four synthetic CVs authored for the SmartRecruiter dissertation benchmark. All names, employers and institutions are fictional. Two job families (backend-python, data-analyst) × three seniority levels (junior, mid, senior) × four archetypes per cell. The 'true_skills' and 'true_yrs' fields are the ground truth used for parsing precision/recall/F1 and experience-year MAE.",
+  "cvs": [
+    {
+      "id": "be-jun-01",
+      "family": "backend-python",
+      "level": "junior",
+      "archetype": "clean fit",
+      "resume_text": "Sara Lopez\nJunior Software Engineer\n\nProfile: Recent computer-science graduate with one year building Python web services. Comfortable shipping small features end to end and writing tests alongside them.\n\nExperience\nNovaPay (Aug 2025 - present): Junior backend engineer. Maintain a FastAPI microservice that exposes the merchant onboarding API. Write pytest unit tests, review pull requests, and operate the service alongside two senior engineers. Migrated three endpoints from Flask to FastAPI.\n\nEducation: BSc Computer Science, City University 2021-2024 (First class).\n\nSkills: Python, FastAPI, Flask, PostgreSQL, Docker, Git, pytest, REST APIs, Linux.",
+      "true_skills": ["Python", "FastAPI", "Flask", "PostgreSQL", "Docker", "Git", "pytest", "REST APIs", "Linux"],
+      "true_yrs": 1.0
+    },
+    {
+      "id": "be-jun-02",
+      "family": "backend-python",
+      "level": "junior",
+      "archetype": "self-taught, no degree",
+      "resume_text": "Marcus Webb\nBackend Developer (Self-Taught)\n\nProfile: Two years of self-directed Python work after a career as a chef. Maintain three open-source FastAPI projects with 400+ stars in total. Looking for a first formal engineering role.\n\nExperience\nFreelance (2023 - present): Built a recipe-management API for two small restaurants using FastAPI and PostgreSQL on a single AWS EC2 instance. Configured Docker Compose, set up GitHub Actions CI, wrote integration tests. Used Stripe and SendGrid for billing and email.\n\nOpen source: 'fastapi-rate-limit-lite' (200 stars), 'pgnotify-py' (150 stars).\n\nEducation: No formal CS degree. Completed CS50x (HarvardX) and FastAPI bootcamp (2023).\n\nSkills: Python, FastAPI, PostgreSQL, Docker, Docker Compose, Git, GitHub Actions, AWS EC2, pytest, REST APIs, SQL.",
+      "true_skills": ["Python", "FastAPI", "PostgreSQL", "Docker", "Git", "GitHub Actions", "AWS", "pytest", "REST APIs", "SQL"],
+      "true_yrs": 2.0
+    },
+    {
+      "id": "be-jun-03",
+      "family": "backend-python",
+      "level": "junior",
+      "archetype": "career changer (teacher -> dev)",
+      "resume_text": "Priya Anand\nTrainee Software Engineer\n\nProfile: Former secondary-school mathematics teacher transitioning into backend development. Completed an immersive 16-week Python bootcamp and have been working as a trainee for ten months.\n\nExperience\nBlueRiver Tech (Sept 2025 - present): Trainee backend engineer. Pair-program with senior engineers on a Django REST Framework service. Have shipped four small features (CSV export endpoint, simple admin filter, two bug fixes) and ~250 lines of pytest tests. Use Git and GitHub PRs daily.\n\nFairfield Secondary School (2018 - 2024): Mathematics teacher.\n\nEducation: PGCE (Education), Open University 2018. BSc Mathematics, University of Leeds 2014-2017.\n\nSkills: Python, Django, Django REST Framework, SQLite, Git, GitHub, pytest, basic SQL, HTML/CSS.",
+      "true_skills": ["Python", "Django", "SQLite", "Git", "pytest", "SQL", "HTML/CSS"],
+      "true_yrs": 0.8
+    },
+    {
+      "id": "be-jun-04",
+      "family": "backend-python",
+      "level": "junior",
+      "archetype": "adjacent stack (Node.js -> Python)",
+      "resume_text": "Tom Schneider\nJunior Backend Engineer\n\nProfile: Two years as a Node.js engineer, now looking to move to a Python team. Built two production services in TypeScript with NestJS and PostgreSQL and have started porting a personal side project to FastAPI.\n\nExperience\nLedgerline GmbH (Jan 2024 - present): Backend engineer. Built a NestJS/TypeScript invoicing service backed by PostgreSQL, deployed via Docker on Hetzner Cloud. Wrote Jest tests and operated the service in production for ~18 months. Recently shipped a FastAPI proof-of-concept for a new internal tool.\n\nSide projects (2024 - 2025): Re-implemented a personal note-taking API in FastAPI to learn the framework; deployed on Fly.io.\n\nEducation: BSc Informatics, Technische Universität Berlin 2019-2022.\n\nSkills: TypeScript, JavaScript, Node.js, NestJS, PostgreSQL, Docker, Git, Jest, REST APIs, Linux, and learning Python and FastAPI.",
+      "true_skills": ["TypeScript", "JavaScript", "Node.js", "PostgreSQL", "Docker", "Git", "REST APIs", "Linux", "Python", "FastAPI"],
+      "true_yrs": 2.0
+    },
+    {
+      "id": "be-mid-01",
+      "family": "backend-python",
+      "level": "mid",
+      "archetype": "clean fit",
+      "resume_text": "Alex Petrov\nBackend Engineer\n\nProfile: Four years building Python web services in fintech. Comfortable owning a service from design through on-call.\n\nExperience\nFinSplice (2022 - present): Backend engineer on the ledger team. Maintain a FastAPI service handling ~6M requests/day, backed by PostgreSQL and Redis. Migrated the service from EC2 to EKS, set up Terraform modules for new environments, run weekly on-call. Wrote a load-testing harness in Python that the team still uses.\n\nWayBank (2021 - 2022): Junior backend engineer. Built a customer-onboarding microservice in Django REST Framework on AWS ECS.\n\nEducation: BSc Software Engineering, University of Manchester 2017-2020.\n\nSkills: Python, FastAPI, Django REST Framework, PostgreSQL, Redis, AWS (EC2, ECS, EKS, RDS), Docker, Kubernetes, Terraform, GitHub Actions, pytest, REST APIs, OpenAPI, Prometheus, Grafana.",
+      "true_skills": ["Python", "FastAPI", "Django", "PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "pytest", "REST APIs", "Prometheus", "Grafana"],
+      "true_yrs": 4.0
+    },
+    {
+      "id": "be-mid-02",
+      "family": "backend-python",
+      "level": "mid",
+      "archetype": "deep specialist (one stack)",
+      "resume_text": "Hiroki Tanaka\nDjango Engineer\n\nProfile: Five years exclusively on Django and Django REST Framework, with deep knowledge of the ORM, migrations, and Celery. Limited exposure to FastAPI or non-Django Python stacks.\n\nExperience\nKoyoTrack (2020 - present): Senior Django engineer. Sole owner of a 200K-line Django monolith serving 80 internal users at a logistics company. Manage Postgres migrations, Celery workers, and the deployment pipeline (GitLab CI, Docker, on-premises Kubernetes). Mentor one junior engineer.\n\nEducation: MEng Computer Science, Imperial College London 2014-2019.\n\nSkills: Python, Django, Django REST Framework, Celery, RabbitMQ, PostgreSQL, Redis, Docker, Kubernetes (on-prem), GitLab CI, pytest, REST APIs, OpenAPI, Sentry.",
+      "true_skills": ["Python", "Django", "Celery", "RabbitMQ", "PostgreSQL", "Redis", "Docker", "Kubernetes", "GitLab CI", "pytest", "REST APIs", "Sentry"],
+      "true_yrs": 5.0
+    },
+    {
+      "id": "be-mid-03",
+      "family": "backend-python",
+      "level": "mid",
+      "archetype": "broad generalist",
+      "resume_text": "Naomi Acheampong\nFull-Stack Engineer\n\nProfile: Four years as a generalist at small startups, touching frontend, backend and a bit of infrastructure. Strong on shipping; less deep on any single area.\n\nExperience\nStitchedFit (2023 - present): Full-stack engineer at a 12-person fashion startup. Backend in FastAPI + PostgreSQL, frontend in React, deployed via Docker on a single DigitalOcean droplet. Set up Cloudflare and Stripe billing. Also wrote a small admin UI in Streamlit.\n\nMintPath (2021 - 2023): Backend engineer. Built a Django service for habit tracking. Some React work for the marketing site.\n\nEducation: BSc Computer Science, University of Bristol 2017-2020.\n\nSkills: Python, FastAPI, Django, JavaScript, React, PostgreSQL, SQLite, Docker, Git, REST APIs, Streamlit, Stripe, Cloudflare, basic AWS (S3).",
+      "true_skills": ["Python", "FastAPI", "Django", "JavaScript", "React", "PostgreSQL", "Docker", "Git", "REST APIs", "AWS"],
+      "true_yrs": 4.0
+    },
+    {
+      "id": "be-mid-04",
+      "family": "backend-python",
+      "level": "mid",
+      "archetype": "contractor (many short stints)",
+      "resume_text": "Daniel O'Sullivan\nIndependent Backend Contractor\n\nProfile: Five years of contract work for early-stage startups. Typical engagement is two to six months. Comfortable parachuting into a codebase and shipping.\n\nExperience\nRecent engagements (selected):\n - LumenSafe (Mar - Aug 2025): Built a FastAPI ingest service for IoT events, PostgreSQL + TimescaleDB, deployed on AWS ECS.\n - PathGather (Oct 2024 - Feb 2025): Stabilised a Django monolith, set up pytest CI, reduced deployment time from 20 to 4 minutes.\n - QuickerBooks (May - Sept 2024): Rewrote a billing service from Flask to FastAPI, added OpenAPI docs and contract tests.\n - Six earlier engagements 2020 - 2024 across Flask, Django and FastAPI; Postgres and MySQL; AWS and GCP.\n\nEducation: BSc Computing, Dublin City University 2015-2018.\n\nSkills: Python, FastAPI, Flask, Django, PostgreSQL, MySQL, TimescaleDB, Docker, AWS (ECS, RDS, S3), GCP, Git, pytest, REST APIs.",
+      "true_skills": ["Python", "FastAPI", "Flask", "Django", "PostgreSQL", "MySQL", "Docker", "AWS", "Git", "pytest", "REST APIs"],
+      "true_yrs": 5.0
+    },
+    {
+      "id": "be-sen-01",
+      "family": "backend-python",
+      "level": "senior",
+      "archetype": "clean fit",
+      "resume_text": "Elena Vasquez\nSenior Backend Engineer\n\nProfile: Eight years building and operating Python services at scale, the last four leading small teams.\n\nExperience\nWavefare (2022 - present): Tech lead, payments platform. Lead a team of five engineers on FastAPI and PostgreSQL services processing ~40M txn/day. Drove the migration from ECS to EKS, introduced Terraform modules, set the on-call rotation. Author of the team's REST API style guide.\n\nNorthRail (2018 - 2022): Senior backend engineer. Migrated a Flask service to FastAPI; built a Kafka-based event pipeline; mentored two engineers from junior to mid.\n\nByteCart (2017 - 2018): Backend engineer. Django REST Framework e-commerce service.\n\nEducation: MSc Computer Science, KTH Royal Institute of Technology 2015-2017. BSc Computer Engineering, Universidad de los Andes 2011-2014.\n\nSkills: Python, FastAPI, Flask, Django, PostgreSQL, Redis, Kafka, AWS (EKS, ECS, RDS, S3, IAM), Docker, Kubernetes, Terraform, GitHub Actions, pytest, REST APIs, OpenAPI, Prometheus, Grafana, Datadog.",
+      "true_skills": ["Python", "FastAPI", "Flask", "Django", "PostgreSQL", "Redis", "Kafka", "AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "pytest", "REST APIs", "Prometheus", "Grafana"],
+      "true_yrs": 8.0
+    },
+    {
+      "id": "be-sen-02",
+      "family": "backend-python",
+      "level": "senior",
+      "archetype": "architect-leaning",
+      "resume_text": "Dr. Henrik Larsen\nPrincipal Engineer / Architect\n\nProfile: Ten years engineering experience, currently a principal-level architect. Recent work is largely design docs, system reviews, and cross-team coordination; I still write code two days per week.\n\nExperience\nGlacierStream (2020 - present): Principal engineer. Designed the company's event-driven architecture (Kafka + FastAPI services + Postgres), led the platform team for two years, authored five public-facing engineering blog posts. Conducted 30+ design reviews in 2024.\n\nNetherCloud (2016 - 2020): Senior backend engineer, then staff. Built and operated a multi-tenant FastAPI platform on EKS.\n\nFlexTrade (2014 - 2016): Backend engineer.\n\nEducation: PhD Distributed Systems, ETH Zurich 2010-2014. MSc Computer Science, ETH Zurich 2008-2010.\n\nSkills: Python, FastAPI, Flask, Go (working knowledge), PostgreSQL, Kafka, AWS, Kubernetes, Terraform, REST APIs, gRPC, OpenTelemetry, system design, technical writing.",
+      "true_skills": ["Python", "FastAPI", "Flask", "Go", "PostgreSQL", "Kafka", "AWS", "Kubernetes", "Terraform", "REST APIs", "gRPC"],
+      "true_yrs": 10.0
+    },
+    {
+      "id": "be-sen-03",
+      "family": "backend-python",
+      "level": "senior",
+      "archetype": "startup multi-hat",
+      "resume_text": "Mira Halvorsen\nFounding Engineer\n\nProfile: Seven years of post-graduation experience, the last four as employee #2 at a small startup where I do everything from backend to deployment to occasional design.\n\nExperience\nPaperBoatHQ (2022 - present): Founding engineer. Built the backend (FastAPI + PostgreSQL on Fly.io), the React frontend, the billing integration (Stripe), and the deployment pipeline. We now have 40 paying customers. I wear too many hats; my Python and FastAPI work is the largest part.\n\nGlimmerCart (2018 - 2022): Backend engineer at a Series B startup. Django and FastAPI services on AWS. Helped onboard six engineers.\n\nEducation: BSc Computer Science, University of Oslo 2015-2018.\n\nSkills: Python, FastAPI, Django, JavaScript, React, TypeScript, PostgreSQL, Docker, Git, AWS (basic), Fly.io, Stripe, pytest, REST APIs.",
+      "true_skills": ["Python", "FastAPI", "Django", "JavaScript", "React", "TypeScript", "PostgreSQL", "Docker", "Git", "AWS", "pytest", "REST APIs"],
+      "true_yrs": 7.0
+    },
+    {
+      "id": "be-sen-04",
+      "family": "backend-python",
+      "level": "senior",
+      "archetype": "ops-leaning (SRE-shaped)",
+      "resume_text": "Caleb Mwangi\nSenior Backend / SRE\n\nProfile: Nine years split roughly 60/40 between backend Python and infrastructure. Most comfortable on the boundary.\n\nExperience\nOrbitDispatch (2021 - present): Senior backend engineer with SRE bias. Own the deployment platform (EKS, Terraform, ArgoCD). Wrote half of the platform's FastAPI control-plane service. Lead the post-incident review process.\n\nIronVault (2017 - 2021): Backend engineer. Django + Celery service on AWS ECS.\n\nVelvetCloud (2015 - 2017): Junior backend engineer.\n\nEducation: BSc Computer Science, University of Nairobi 2011-2014.\n\nSkills: Python, FastAPI, Django, Celery, PostgreSQL, Redis, AWS (EKS, ECS, RDS, IAM), Docker, Kubernetes, Terraform, ArgoCD, GitHub Actions, Prometheus, Grafana, Loki, Bash, Linux, pytest, REST APIs.",
+      "true_skills": ["Python", "FastAPI", "Django", "Celery", "PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Prometheus", "Grafana", "Bash", "Linux", "pytest", "REST APIs"],
+      "true_yrs": 9.0
+    },
+    {
+      "id": "da-jun-01",
+      "family": "data-analyst",
+      "level": "junior",
+      "archetype": "clean fit",
+      "resume_text": "Yui Nakamura\nJunior Data Analyst\n\nProfile: One year as a junior analyst on a small e-commerce team. SQL-first; comfortable in pandas for ad-hoc work.\n\nExperience\nBramblePost (Aug 2024 - present): Junior data analyst. Write daily and weekly SQL reports against a PostgreSQL warehouse. Built three Tableau dashboards used by the operations team. Run small pandas analyses (cohort retention, basket composition) on request. Took an internal A/B testing course.\n\nEducation: BSc Economics, London School of Economics 2021-2024.\n\nSkills: SQL, PostgreSQL, Tableau, Excel, Python, pandas, basic statistics, Git (basic).",
+      "true_skills": ["SQL", "PostgreSQL", "Tableau", "Excel", "Python", "pandas", "Git"],
+      "true_yrs": 1.0
+    },
+    {
+      "id": "da-jun-02",
+      "family": "data-analyst",
+      "level": "junior",
+      "archetype": "academic / MSc fresh graduate",
+      "resume_text": "Andreas Costa\nData Analyst (Recent Graduate)\n\nProfile: Just finished an MSc in Statistics. Strong on the methods side; limited industry experience.\n\nExperience\nUniversity of Padua (2024 MSc dissertation): Implemented a hierarchical Bayesian model of football match outcomes in Python (PyMC) on ten seasons of Serie A data. Wrote up the analysis in R Markdown.\n\nIntern, GelatoMetrics (Jun - Sept 2023): Three-month analyst internship. Wrote SQL reports and built one Tableau dashboard.\n\nEducation: MSc Statistics, University of Padua 2022-2024. BSc Mathematics, University of Bologna 2019-2022.\n\nSkills: Python, pandas, numpy, scikit-learn, PyMC, R, SQL, Tableau (basic), statistics, hypothesis testing, regression, Bayesian inference, LaTeX.",
+      "true_skills": ["Python", "pandas", "numpy", "scikit-learn", "R", "SQL", "Tableau", "statistics", "hypothesis testing", "regression"],
+      "true_yrs": 0.3
+    },
+    {
+      "id": "da-jun-03",
+      "family": "data-analyst",
+      "level": "junior",
+      "archetype": "SQL-strong, viz-weak",
+      "resume_text": "Robert Quinn\nAnalyst\n\nProfile: Two years as a reporting analyst writing SQL against a Snowflake warehouse for a logistics company. Limited Python and BI-tool experience.\n\nExperience\nFreightLine (2023 - present): Analyst. Write 50+ SQL queries per week in Snowflake (CTEs, window functions, recursive queries for routing). Maintain ~200 saved queries used by ops and finance. Some dbt for transformations. BI is mostly emailed CSV exports and Excel charts; I do not own any Tableau dashboards.\n\nEducation: BSc Geography, University of Sheffield 2019-2022.\n\nSkills: SQL (advanced), Snowflake, dbt (basic), Excel, basic Python, basic statistics, Git (basic).",
+      "true_skills": ["SQL", "Snowflake", "dbt", "Excel", "Python", "Git"],
+      "true_yrs": 2.0
+    },
+    {
+      "id": "da-jun-04",
+      "family": "data-analyst",
+      "level": "junior",
+      "archetype": "viz-strong, SQL-weak",
+      "resume_text": "Chiamaka Eze\nBI Analyst\n\nProfile: 18 months building Power BI dashboards for a mid-sized retailer. Strong on visualisation; SQL is mostly auto-generated by Power BI.\n\nExperience\nSilverline Retail (Feb 2024 - present): BI analyst. Own seven Power BI dashboards covering sales, stock and store-level KPIs. Use Power Query and DAX heavily. Most of my data comes via pre-built data sources; I rarely write SQL by hand.\n\nEducation: BA Marketing, University of Lagos 2019-2022.\n\nSkills: Power BI, Power Query, DAX, Excel, basic SQL, basic Python, data storytelling.",
+      "true_skills": ["Power BI", "Excel", "SQL", "Python"],
+      "true_yrs": 1.5
+    },
+    {
+      "id": "da-mid-01",
+      "family": "data-analyst",
+      "level": "mid",
+      "archetype": "clean fit",
+      "resume_text": "Owen Reilly\nData Analyst\n\nProfile: Four years as a generalist data analyst at two SaaS companies. Equally comfortable in SQL, pandas, and Tableau.\n\nExperience\nQuillFlow (2023 - present): Data analyst, growth team. Own the company's Tableau workbook (60+ dashboards), write SQL against a PostgreSQL warehouse with dbt models. Run two A/B tests per quarter and present results to product. Built a churn-prediction prototype in scikit-learn.\n\nMortarMint (2021 - 2023): Junior then mid analyst. SQL reporting, Tableau dashboards, ad-hoc pandas.\n\nEducation: BSc Economics, Trinity College Dublin 2017-2020.\n\nSkills: SQL, PostgreSQL, dbt, Python, pandas, numpy, scikit-learn, Tableau, Excel, statistics, A/B testing, regression, Git.",
+      "true_skills": ["SQL", "PostgreSQL", "dbt", "Python", "pandas", "numpy", "scikit-learn", "Tableau", "Excel", "statistics", "A/B testing", "regression", "Git"],
+      "true_yrs": 4.0
+    },
+    {
+      "id": "da-mid-02",
+      "family": "data-analyst",
+      "level": "mid",
+      "archetype": "ML-leaning (drifting to DS)",
+      "resume_text": "Sophia Müller\nAnalyst / Aspiring Data Scientist\n\nProfile: Four years as an analyst, the last 18 months increasingly focused on small ML projects. Still mostly an analyst role, but ML curiosity is taking over.\n\nExperience\nPlumeBank (2021 - present): Data analyst. SQL reporting in BigQuery, Looker dashboards. Built three internal ML prototypes: churn prediction (scikit-learn), customer-support ticket clustering (sentence-transformers), and an internal NPS-driver analysis. None of them are in production but two are running in scheduled notebooks.\n\nEducation: MSc Statistics, ETH Zurich 2019-2021. BSc Mathematics, Heidelberg University 2016-2019.\n\nSkills: SQL, BigQuery, Python, pandas, numpy, scikit-learn, sentence-transformers, Looker, statistics, hypothesis testing, regression, basic deep learning (PyTorch), Git, Jupyter.",
+      "true_skills": ["SQL", "BigQuery", "Python", "pandas", "numpy", "scikit-learn", "Looker", "statistics", "hypothesis testing", "regression", "PyTorch", "Git"],
+      "true_yrs": 4.0
+    },
+    {
+      "id": "da-mid-03",
+      "family": "data-analyst",
+      "level": "mid",
+      "archetype": "finance-domain analyst",
+      "resume_text": "Faisal Rahman\nFinance Data Analyst\n\nProfile: Five years inside the FP&A function at a global bank. Strong SQL and Excel; Tableau experience but no Power BI or Looker.\n\nExperience\nNorthCape Bank (2020 - present): Senior analyst, FP&A. Own the monthly liquidity reporting SQL pack against the Oracle warehouse. Manage 30+ saved Tableau workbooks. Built a Python (pandas) pipeline that consolidates eight CSV feeds and reduced our month-end close from three days to one.\n\nEducation: MSc Finance, London Business School 2018-2020. BSc Accounting, Karachi University 2014-2017.\n\nSkills: SQL, Oracle, Tableau, Excel (advanced, VBA), Python, pandas, statistics, IFRS basics, Git (basic).",
+      "true_skills": ["SQL", "Oracle", "Tableau", "Excel", "Python", "pandas", "statistics", "Git"],
+      "true_yrs": 5.0
+    },
+    {
+      "id": "da-mid-04",
+      "family": "data-analyst",
+      "level": "mid",
+      "archetype": "marketing-domain analyst",
+      "resume_text": "Lara Petersen\nMarketing Analyst\n\nProfile: Four years in marketing analytics roles. Strong on attribution and campaign measurement; comfortable in SQL and BI tools.\n\nExperience\nGlowtide (2022 - present): Senior marketing analyst. Run the company's attribution model in SQL on Snowflake with dbt models, present weekly to the CMO. Own three Tableau dashboards. Run six A/B tests per quarter (email, paid, on-site) using internal tooling and pandas for the analysis.\n\nDuskDrift Agency (2021 - 2022): Marketing analyst. SQL and Excel.\n\nEducation: BSc Statistics, University of Copenhagen 2017-2020.\n\nSkills: SQL, Snowflake, dbt, Tableau, Excel, Python, pandas, A/B testing, statistics, attribution modelling, marketing analytics, Git.",
+      "true_skills": ["SQL", "Snowflake", "dbt", "Tableau", "Excel", "Python", "pandas", "A/B testing", "statistics", "Git"],
+      "true_yrs": 4.0
+    },
+    {
+      "id": "da-sen-01",
+      "family": "data-analyst",
+      "level": "senior",
+      "archetype": "clean fit",
+      "resume_text": "Yusuf Demir\nSenior Data Analyst\n\nProfile: Eight years as an analyst, the last three as a senior owning end-to-end analytics for one product area.\n\nExperience\nKindlePath (2021 - present): Senior data analyst, learner-engagement product area. Own the Tableau dashboards, the dbt models, and the A/B testing process for that surface. Mentor two junior analysts. Present to the leadership team monthly.\n\nQuokkaQuotes (2018 - 2021): Mid then senior analyst. SQL on Redshift, Looker dashboards, A/B testing.\n\nNimbusNet (2016 - 2018): Junior analyst.\n\nEducation: MSc Statistics, University of Edinburgh 2014-2016. BSc Mathematics, Boğaziçi University 2010-2014.\n\nSkills: SQL, Snowflake, Redshift, dbt, Airflow, Python, pandas, numpy, scikit-learn, Tableau, Looker, Excel, statistics, A/B testing, hypothesis testing, regression, Bayesian basics, Git.",
+      "true_skills": ["SQL", "Snowflake", "Redshift", "dbt", "Airflow", "Python", "pandas", "numpy", "scikit-learn", "Tableau", "Looker", "Excel", "statistics", "A/B testing", "hypothesis testing", "regression", "Git"],
+      "true_yrs": 8.0
+    },
+    {
+      "id": "da-sen-02",
+      "family": "data-analyst",
+      "level": "senior",
+      "archetype": "manager-leaning (less hands-on)",
+      "resume_text": "Aisha Bello\nAnalytics Manager\n\nProfile: Nine years experience, the last three as an analytics manager leading a team of four. Day-to-day is mostly people, stakeholder, and roadmap work; I still write SQL maybe a day per week.\n\nExperience\nLumenStack (2022 - present): Analytics manager. Lead a team of four analysts supporting product, marketing and finance. Set the team's tooling (Snowflake, dbt, Looker), run the weekly review, present to the exec team. I still personally write SQL for ad-hoc executive requests.\n\nVerveBank (2018 - 2022): Senior analyst, then lead analyst. Similar stack.\n\nFairPay (2015 - 2018): Analyst.\n\nEducation: MSc Operational Research, University of Warwick 2013-2014. BSc Mathematics, University of Ibadan 2010-2013.\n\nSkills: SQL, Snowflake, dbt, Looker, Tableau, Excel, Python (basic), pandas (basic), statistics, A/B testing, team leadership, stakeholder management, Git (basic).",
+      "true_skills": ["SQL", "Snowflake", "dbt", "Looker", "Tableau", "Excel", "Python", "pandas", "statistics", "A/B testing", "Git"],
+      "true_yrs": 9.0
+    },
+    {
+      "id": "da-sen-03",
+      "family": "data-analyst",
+      "level": "senior",
+      "archetype": "consultant (varied clients)",
+      "resume_text": "Klara Novak\nIndependent Analytics Consultant\n\nProfile: Six years inside companies plus four as an independent consultant. My recent work is engagement-shaped: arrive, diagnose, ship, hand over.\n\nExperience\nIndependent (2021 - present): Consulting. Recent engagements include: building a Looker semantic layer for a fintech (3 months); writing the SQL style guide and dbt skeleton for a healthtech startup (2 months); running a quarterly A/B-testing audit for a marketplace (recurring). Across engagements I work in SQL (Snowflake, BigQuery, Postgres), dbt, Looker, Tableau, and Python.\n\nQuickFi (2017 - 2021): Senior analyst, then lead analyst. Built and owned the original analytics stack.\n\nFernGrowth (2014 - 2017): Analyst.\n\nEducation: BSc Economics and Statistics, Charles University Prague 2010-2013.\n\nSkills: SQL, Snowflake, BigQuery, PostgreSQL, dbt, Looker, Tableau, Python, pandas, numpy, scikit-learn, statistics, A/B testing, hypothesis testing, regression, Git.",
+      "true_skills": ["SQL", "Snowflake", "BigQuery", "PostgreSQL", "dbt", "Looker", "Tableau", "Python", "pandas", "numpy", "scikit-learn", "statistics", "A/B testing", "hypothesis testing", "regression", "Git"],
+      "true_yrs": 10.0
+    },
+    {
+      "id": "da-sen-04",
+      "family": "data-analyst",
+      "level": "senior",
+      "archetype": "BI architect (heavy tooling, lighter coding)",
+      "resume_text": "Marcus Lindqvist\nBI Architect\n\nProfile: Twelve years in BI roles, currently a BI architect. Heavy on the tooling and modelling side; my Python use is mostly notebooks for ad-hoc data quality checks.\n\nExperience\nVantageTrust (2019 - present): BI architect. Designed and own the company's BI stack: Snowflake warehouse, dbt models (350+ models), Looker semantic layer (200+ Explores), and the data-governance process. Authored the company's BI tooling standards.\n\nMarbleNet (2014 - 2019): Senior BI developer. Tableau, MSSQL, SSIS.\n\nOakHedge (2011 - 2014): BI developer.\n\nEducation: BSc Information Systems, Lund University 2007-2010.\n\nSkills: SQL, Snowflake, MSSQL, dbt, Looker, Tableau, Excel, Python (basic), pandas (basic), data modelling (Kimball, Data Vault), Git.",
+      "true_skills": ["SQL", "Snowflake", "dbt", "Looker", "Tableau", "Excel", "Python", "pandas", "Git"],
+      "true_yrs": 12.0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+EMILY WATSON
+Email: emily.watson@example.com
+LinkedIn: linkedin.com/in/emilywatson
+Location: London, UK
+
+SUMMARY
+Motivated Junior Python Developer with 1 year of experience in backend development and API integration. Strong understanding of Python fundamentals and experience with FastAPI. Passionate about learning cloud technologies and improving backend performance.
+
+SKILLS
+Python, FastAPI, Flask, SQL, PostgreSQL, Git, HTML, CSS, REST APIs, Problem-Solving
+
+EXPERIENCE
+Junior Python Developer – ByteWorks Ltd, London
+May 2023 – Present
+- Assisted in developing REST APIs using FastAPI.
+- Created and maintained SQL queries for small business applications.
+- Collaborated with senior developers on debugging and unit testing.
+
+EDUCATION
+BSc Computer Science – University of Manchester, 2022
+
+
+

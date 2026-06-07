@@ -1,0 +1,118 @@
+.application-success {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.success-icon {
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.success-header h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.success-header p {
+  color: #6b7280;
+}
+
+.parsed-data-section,
+.match-score-section,
+.ai-summary-section,
+.interview-questions-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.parsed-data-section h3,
+.match-score-section h3,
+.ai-summary-section h3,
+.interview-questions-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.parsed-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  color: #4b5563;
+}
+
+.info-item strong {
+  color: #1f2937;
+  margin-right: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background: #3b82f6;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.score-display {
+  text-align: center;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.ai-text {
+  color: #4b5563;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.section-note {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.questions-list {
+  padding-left: 1.5rem;
+  color: #4b5563;
+}
+
+.questions-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.success-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+

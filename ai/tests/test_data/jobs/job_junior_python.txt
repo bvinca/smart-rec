@@ -1,0 +1,2 @@
+Title: Junior Python Developer
+Description: Looking for an entry-level Python developer with strong fundamentals in data handling

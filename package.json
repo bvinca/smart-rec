@@ -1,0 +1,27 @@
+{
+  "name": "smartrecruiter",
+  "version": "1.0.0",
+  "description": "SmartRecruiter is an intelligent Applicant Tracking System (ATS) that combines AI, NLP, and Retrieval-Augmented Generation (RAG) to automate recruitment tasks, rank candidates, and assist recruiters in making fair and informed hiring decisions.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && venv\\Scripts\\python.exe -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvinca/smartRecruiter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bvinca/smartRecruiter/issues"
+  },
+  "homepage": "https://github.com/bvinca/smartRecruiter#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

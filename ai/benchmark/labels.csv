@@ -1,0 +1,58 @@
+cv_id,job_id,rater_A_rank,rater_B_rank,notes
+# Suitability ranking on a 1-5 scale per (CV, job) pair.
+# 5 = excellent fit, definite interview ; 4 = good, likely interview ;
+# 3 = passable, maybe ; 2 = poor fit, probably not ; 1 = bad fit, reject.
+#
+# rater_A: the dissertation author. rater_B: TBD - leave blank or "TBD" until a
+# second annotator has independently filled it in. The benchmark runner detects
+# blank rater_B values and refuses to compute inter-rater agreement on a
+# single-annotator dataset (it reports "second annotator required" instead of
+# fabricating kappa = 1.0).
+be-jun-01,job-be,3,TBD,clean junior - fits stack
+be-jun-02,job-be,3,TBD,self-taught 2yrs - good skills low formal exp
+be-jun-03,job-be,2,TBD,career changer 0.8yrs Django only
+be-jun-04,job-be,2,TBD,Node.js dev learning Python
+be-mid-01,job-be,5,TBD,textbook fit
+be-mid-02,job-be,4,TBD,deep Django specialist (FastAPI light)
+be-mid-03,job-be,3,TBD,broad generalist - light on infra and scale
+be-mid-04,job-be,4,TBD,contractor varied solid Python
+be-sen-01,job-be,4,TBD,senior on mid role - overqualified
+be-sen-02,job-be,3,TBD,architect-leaning wants design not hands-on
+be-sen-03,job-be,4,TBD,founding eng broad right years
+be-sen-04,job-be,4,TBD,SRE-bias strong infra and backend
+da-jun-01,job-be,1,TBD,analyst not engineer
+da-jun-02,job-be,1,TBD,academic stats not backend
+da-jun-03,job-be,1,TBD,analyst not engineer
+da-jun-04,job-be,1,TBD,BI not engineer
+da-mid-01,job-be,1,TBD,analyst not engineer
+da-mid-02,job-be,2,TBD,Python and ML but not service engineering
+da-mid-03,job-be,1,TBD,finance analyst
+da-mid-04,job-be,1,TBD,marketing analyst
+da-sen-01,job-be,1,TBD,senior analyst not engineer
+da-sen-02,job-be,1,TBD,analytics manager
+da-sen-03,job-be,1,TBD,analytics consultant
+da-sen-04,job-be,1,TBD,BI architect
+be-jun-01,job-da,1,TBD,backend dev not analyst
+be-jun-02,job-da,1,TBD,backend dev not analyst
+be-jun-03,job-da,1,TBD,trainee backend
+be-jun-04,job-da,1,TBD,Node.js dev
+be-mid-01,job-da,1,TBD,backend engineer
+be-mid-02,job-da,1,TBD,Django specialist
+be-mid-03,job-da,2,TBD,generalist some SQL and BI exposure
+be-mid-04,job-da,1,TBD,backend contractor
+be-sen-01,job-da,1,TBD,senior backend
+be-sen-02,job-da,1,TBD,principal engineer architect
+be-sen-03,job-da,2,TBD,founding eng - some breadth
+be-sen-04,job-da,1,TBD,SRE backend
+da-jun-01,job-da,3,TBD,junior clean fit
+da-jun-02,job-da,3,TBD,fresh MSc strong methods
+da-jun-03,job-da,3,TBD,SQL-strong viz-weak partial
+da-jun-04,job-da,2,TBD,viz-strong SQL-weak partial
+da-mid-01,job-da,5,TBD,textbook fit
+da-mid-02,job-da,4,TBD,right years drifting to DS
+da-mid-03,job-da,4,TBD,finance domain otherwise fits
+da-mid-04,job-da,4,TBD,marketing domain otherwise fits
+da-sen-01,job-da,4,TBD,senior on mid role overqualified
+da-sen-02,job-da,3,TBD,manager wants IC mismatch
+da-sen-03,job-da,4,TBD,consultant fits IC mid
+da-sen-04,job-da,3,TBD,BI architect wants architect work

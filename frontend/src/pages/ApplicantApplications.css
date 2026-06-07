@@ -1,0 +1,214 @@
+.applicant-applications {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.application-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.application-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.application-title h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.application-date {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.application-details {
+  margin-bottom: 1rem;
+}
+
+.job-location {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.application-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.status-icon {
+  margin-right: 0.5rem;
+}
+
+.status-icon.pending {
+  color: #3b82f6;
+}
+
+.status-icon.success {
+  color: #10b981;
+}
+
+.status-icon.rejected {
+  color: #ef4444;
+}
+
+.prep-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+  animation: prep-fade-in 0.15s ease-out;
+}
+
+.prep-modal {
+  position: relative;
+  background: #fff;
+  border-radius: 14px;
+  max-width: 720px;
+  width: 100%;
+  padding: 2rem 2.25rem 1.75rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+  animation: prep-slide-up 0.2s ease-out;
+}
+
+.prep-modal-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prep-modal-close:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.prep-modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  padding-right: 2.5rem;
+}
+.prep-modal-header > svg {
+  color: #f59e0b;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.prep-modal-header h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+.prep-modal-subtitle {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prep-modal-cache-badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  background: #ecfdf5;
+  color: #047857;
+  border-radius: 999px;
+  border: 1px solid #a7f3d0;
+}
+
+.prep-section {
+  margin-bottom: 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+}
+.prep-section h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+.prep-section p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+.prep-section ol,
+.prep-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.prep-section li {
+  margin-bottom: 0.45rem;
+  color: #334155;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.prep-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+@keyframes prep-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes prep-slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
